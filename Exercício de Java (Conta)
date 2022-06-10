@@ -44,6 +44,6 @@ public class Conta {
 		double transferencia = leitor.nextDouble();
 		c.saldo = c.saldo - transferencia;
 		b.saldo = b.saldo + transferencia;
-		System.out.println("Saldo da conta de " + c.nomeCliente + ": " + c.saldo + "\nSaldo da conta de " + b.nomeCliente + ":" + b.saldo);
+		System.out.println("Saldo da conta de " + c.nomeCliente + ": " + c.saldo + "\nSaldo da conta de " + b.nomeCliente + ": " + b.saldo);
 	}
 }
