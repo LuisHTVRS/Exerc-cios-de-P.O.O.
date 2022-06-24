@@ -7,7 +7,6 @@ public class Principal {
 	}
 }
 
-import java.util.Scanner;
 public class Pessoa {
 	private String nome;
 	private int idade;
