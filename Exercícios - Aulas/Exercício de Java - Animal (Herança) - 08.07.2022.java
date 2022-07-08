@@ -30,6 +30,9 @@ public class Principal {
 				lista [i].setNome("Blue");
 				lista [i].correr();
 			}
+			if (lista [i] instanceof Arara) {
+				lista [i].voar();
+			}
 		}
 		System.out.println("----------------------------------------------------------");
 		x.rugir();
@@ -95,5 +98,8 @@ public class Animal {
 	}
 	public void correr () {
 		System.out.println("O animal " + getNome() + " está correndo...");
+	}
+	public void voar () {
+		System.out.println("A arara " + getNome() + " está voando...");
 	}
 }
