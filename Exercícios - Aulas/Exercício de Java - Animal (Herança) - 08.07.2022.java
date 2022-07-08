@@ -1,9 +1,9 @@
 public class Principal {
 	public static void main (String [] args) {
 		Leao x = new Leao ();
-		Urso y = new Urso ();
 		Urso z = new Urso ();
-		Tigre t = new Tigre();
+		Animal t = new Tigre();
+		Animal y = new Urso ();
 		x.setNome("Simba");
 		y.setNome("Balu");
 		z.setNome("Zé Colméia");
@@ -12,6 +12,7 @@ public class Principal {
 		System.out.println(y.equals(z));
 		x.rugir();
 		z.encontrarLeonardo();
+		t.correr();
 	}
 }
 
@@ -26,7 +27,8 @@ public class Urso extends Animal {
 }
 
 public class Tigre extends Animal {
-	
+	public void correr () {
+		System.out.println("O tigre " + getNome() + " está correndo...");
 }
 
 public class Arara extends Animal {
@@ -68,5 +70,8 @@ public class Animal {
 	}
 	public void setTamanho(double tamanho) {
 		this.tamanho = tamanho;
+	}
+	public void correr () {
+		System.out.println("O animal " + getNome() + " está correndo...");
 	}
 }
