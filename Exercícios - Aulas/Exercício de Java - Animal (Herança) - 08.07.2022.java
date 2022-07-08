@@ -1,5 +1,6 @@
 public class Principal {
 	public static void main (String [] args) {
+		Animal [] lista = new Animal [4];
 		Leao x = new Leao ();
 		Urso z = new Urso ();
 		Animal t = new Tigre();
@@ -8,8 +9,29 @@ public class Principal {
 		y.setNome("Balu");
 		z.setNome("Zé Colméia");
 		t.setNome("Richard Parker");
-		System.out.println(x.equals(y));
-		System.out.println(y.equals(z));
+		for (int i = 0; i < lista.length; i++) {
+			if (i == 0) {
+				lista [i] = new Leao ();
+				lista [i].setNome("Scar");
+				lista [i].correr();
+			}
+			else if (i == 1) {
+				lista [i] = new Urso ();
+				lista [i].setNome("Catatau");
+				lista [i].correr();
+			}
+			else if (i == 2) {
+				lista [i] = new Tigre ();
+				lista [i].setNome("Tai Lung");
+				lista [i].correr();
+			}
+			else {
+				lista [i] = new Arara ();
+				lista [i].setNome("Blue");
+				lista [i].correr();
+			}
+		}
+		System.out.println("----------------------------------------------------------");
 		x.rugir();
 		z.encontrarLeonardo();
 		t.correr();
