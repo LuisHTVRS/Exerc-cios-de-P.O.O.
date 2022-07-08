@@ -8,6 +8,7 @@ public class Principal {
 		z.setNome("Zé Colméia");
 		System.out.println(x.getNome());
 		System.out.println(x.equals(y));
+		System.out.println(y.equals(z));
 	}
 }
 
