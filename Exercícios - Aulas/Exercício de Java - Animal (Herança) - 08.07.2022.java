@@ -3,21 +3,26 @@ public class Principal {
 		Leao x = new Leao ();
 		Urso y = new Urso ();
 		Urso z = new Urso ();
+		Tigre t = new Tigre();
 		x.setNome("Simba");
 		y.setNome("Balu");
 		z.setNome("Zé Colméia");
-		System.out.println(x.getNome());
+		t.setNome("Richard Parker");
 		System.out.println(x.equals(y));
 		System.out.println(y.equals(z));
+		x.rugir();
+		z.encontrarLeonardo();
 	}
 }
 
 public class Leao extends Animal {
-	
+	public void rugir () {
+		System.out.println(getNome() + " rugiu!");
 }
 
 public class Urso extends Animal {
-	
+	public void encontrarLeonardo () {
+		System.out.println(getNome () + " encontrou o Leonardo DiCaprio!");
 }
 
 public class Tigre extends Animal {
